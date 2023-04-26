@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+  background: white !important;
+  box-shadow: none;
+  width: 100%;
+  font-weight: 500;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.navbar .nav-item .nav-link.active {
+  color: #86a8e7;
+  box-shadow: none;
+}
+.header {
+  font-family: "Roboto", sans-serif;
+  background: rgba(13, 6, 28, 0.78) !important;
+  width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 5px rgba(19, 18, 19, 1);
+  margin-bottom: 10px;
+}
+
+.header .navbar-toggler:focus {
+  box-shadow: none;
+}
+.header .navbar-toggler {
+  border: none;
+}
+
+.header .nav-item .nav-link {
+  text-align: center;
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+.header .nav-item .nav-link.active {
+  color: #86a8e7 !important;
+  font-weight: 600;
+  border: none;
+}
+.button {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #86a8e7;
+  transition: 0.5s ease;
+}
+
+.button:hover {
+  color: #1e1e2b !important;
+  transition-delay: 0.5s;
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+.button::after {
+  border: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #86a8e7;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.button:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+/* label check */
+.header .navbar-toggler:focus {
+  border: none;
+}
+.label-check {
+  display: none;
+}
+
+.hamburger-label {
+  width: 70px;
+  height: 58px;
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger-label div {
+  width: 70px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+}
+
+.line1 {
+  transition: all 0.3s;
+}
+
+.line2 {
+  margin: 18px 0 0 0;
+  transition: 0.3s;
+}
+
+.line3 {
+  margin: 36px 0 0 0;
+  transition: 0.3s;
+}
+
+#label-check:checked + .hamburger-label .line1 {
+  transform: rotate(35deg) scaleX(0.55) translate(39px, -4.5px);
+  border-radius: 50px 50px 50px 0;
+}
+
+#label-check:checked + .hamburger-label .line3 {
+  transform: rotate(-35deg) scaleX(0.55) translate(39px, 4.5px);
+  border-radius: 0 50px 50px 50px;
+}
+
+#label-check:checked + .hamburger-label .line2 {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}

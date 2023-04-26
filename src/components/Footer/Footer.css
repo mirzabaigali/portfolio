@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Marck+Script&display=swap");
+
+.footer{
+  font-family: "Alkatra", cursive;
+  font-family: "Marck Script", cursive;
+}
+.link a {
+  color: #86A8E7 !important;
+  text-decoration: none;
+  
+}

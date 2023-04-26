@@ -1,0 +1,14 @@
+.heading {
+  /* font-size: 1.5rem; */
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+li {
+  margin-bottom: 5px;
+}
+
+.footerList a {
+  text-decoration: none;
+  color:black;
+  font-size: x-large;
+}
